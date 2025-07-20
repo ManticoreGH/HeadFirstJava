@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chap02/DogTestDrive/DogTestDrive.iml" filepath="$PROJECT_DIR$/Chap02/DogTestDrive/DogTestDrive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chap02/DrumKitTestDrive/DrumKitTestDrive.iml" filepath="$PROJECT_DIR$/Chap02/DrumKitTestDrive/DrumKitTestDrive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chap02/EchoTestDrive/EchoTestDrive.iml" filepath="$PROJECT_DIR$/Chap02/EchoTestDrive/EchoTestDrive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chap02/GuessGame/GuessGame.iml" filepath="$PROJECT_DIR$/Chap02/GuessGame/GuessGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/HeadFirstJava.iml" filepath="$PROJECT_DIR$/.idea/HeadFirstJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chap02/MovieTestDrive/MovieTestDrive.iml" filepath="$PROJECT_DIR$/Chap02/MovieTestDrive/MovieTestDrive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chap01/PoolPuzzleOne/PoolPuzzleOne.iml" filepath="$PROJECT_DIR$/Chap01/PoolPuzzleOne/PoolPuzzleOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chap01/Shuffle1/Shuffle1.iml" filepath="$PROJECT_DIR$/Chap01/Shuffle1/Shuffle1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chap01/Test/Test.iml" filepath="$PROJECT_DIR$/Chap01/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chap01/ex01/ex01.iml" filepath="$PROJECT_DIR$/Chap01/ex01/ex01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chap01/ex02/ex02.iml" filepath="$PROJECT_DIR$/Chap01/ex02/ex02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chap01/ex03/ex03.iml" filepath="$PROJECT_DIR$/Chap01/ex03/ex03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chap01/ex04/ex04.iml" filepath="$PROJECT_DIR$/Chap01/ex04/ex04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chap01/ex05/ex05.iml" filepath="$PROJECT_DIR$/Chap01/ex05/ex05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chap01/ex06/ex06.iml" filepath="$PROJECT_DIR$/Chap01/ex06/ex06.iml" />
+    </modules>
+  </component>
+</project>
