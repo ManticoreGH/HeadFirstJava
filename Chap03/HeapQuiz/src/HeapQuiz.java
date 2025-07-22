@@ -3,11 +3,13 @@ public class HeapQuiz {
     public static void main(String[] args) throws Exception {
         int x = 0;
         HeapQuiz[] hq = new HeapQuiz[5];
+        
         while (x < 3) {
             hq[x] = new HeapQuiz();
             hq[x].id = x;
             x++;
         }
+
         hq[3] = hq[1];
         hq[4] = hq[1];
         hq[3] = null;
@@ -16,5 +18,10 @@ public class HeapQuiz {
         hq[3] = hq[2];
         hq[2] = hq[0];
         // do stuff
+        for (HeapQuiz heapQuiz : hq) {
+            if (heapQuiz != null) {
+                System.out.println("HeapQuiz ID: " + heapQuiz.id);
+            }
+        }
     }
 }
