@@ -1,0 +1,44 @@
+DECLARE an int array to hold the location cells. Call it locationCells.
+DECLARE an int to hold the number of hits. Call it numOfHits and SET it to 0.
+______________________________________________________________________________________________________________________________
+DECLARE a check Yourself() method that takes a int for the user's guess (1, 3, etc.), checks it.
+DECLARE a setLocationCells() setter method that takes an int array (which has the three cell locations as ints(2, 3, 4, etc.).
+______________________________________________________________________________________________________________________________
+METHOD String checkYourself(int userGuess)
+       GET the user as int parameter
+       REPEAT with each of the location cells in the int array
+       	      //COMPARE the user guess to the location cell
+	      IF the user guess matches
+	      	 INCREMENT the number of hits
+		 //FIND OUT if it was the last location cell
+		 IF the user guess matches
+		    INCREMENT the number of hits
+		    //FIND OUT if it was the last location cell:
+		    IF number of hits is 3. RETURN "kill" as the result.
+		    ELSE it was not a kill, so RETURN "hit"
+		    ENDIF
+		 ELSE the user guess did not match, so RETURN "miss"
+	 	 ENDIF
+	END REPEAT
+END METHOD
+
+METHOD void setLocationCells(int[] cellLocations)
+       GET the cell locations as an int array parameter
+       ASSIGN the cell locations parameter to the cell locations instance variable.
+END METHOD
+
+METHOD String checkYourself(int userGuess)
+       GET the user guess as an int parameter
+       REPEAT which each of the location cells in the int array
+       	      //COMPARE the user guess to the location cell
+       		 IF the user guess matches
+       	  	    INCREMENT the number of hits
+	  	    //FIND OUT if it was the last location cell:
+	  	    IF number of hits is 3. RETURN "Kill" as the result.
+	  	    ELSE it was not a kill, so RETURN "Hit"
+	  	    END IF
+       		 ELSE it was not a kill, so RETURN "Miss"
+		 END IF
+	END REPEAT
+END METHOD
+       
