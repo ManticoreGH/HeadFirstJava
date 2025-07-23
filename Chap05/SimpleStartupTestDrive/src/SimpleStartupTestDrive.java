@@ -1,15 +1,26 @@
 public class SimpleStartupTestDrive {
     public static void main(String[] args) throws Exception {
-        SimpleStartup dot = new SimpleStartup();
-        int[] locations = {2,3,4};
-        dot.setLocationCells(locations);
-        int userGuess = 2;
-        String result = dot.checkYourself(userGuess);
-        String testResult = "failed";
-        if (result.equals("hit")) {
-            testResult = "passed";
-        }
-        System.out.println(testResult);
-    }
-   
+        int numOfGuesses = 0;
+        GameHelper helper = new GameHelper();
+        SimpleStartup theStartup = new SimpleStartup();
+        int randomNum = (int) (Math.random() * 5);
+        
+        int[] locations = {
+            randomNum, 
+            randomNum + 1, 
+            randomNum + 2
+        };
+        theStartup.setLocationCells(locations);
+        boolean isAlive = true;
+
+        while (isAlive) {
+            int guess = helper.getUserInput("Enter a number");
+            String result = theStartup.checkYourself(guess);
+            numOfGuesses++;
+            if (result.equals("kill")) {
+                isAlive = false;
+                System.out.println("You took " + numOfGuesses + " guesses.");
+            } // close if
+        } // close while
+    }   
 }
