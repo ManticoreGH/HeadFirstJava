@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 
 public class AnimalTestDrive {
     public static void main(String[] args) throws Exception {
@@ -45,7 +45,20 @@ public class AnimalTestDrive {
 
         System.out.println(c.getClass().getName());
         System.out.println(c.hashCode()); // Think of it like an ID for the object for now
-        System.out.println(c.toString()); // Default toString method from Object class        
+        System.out.println(c.toString()); // Default toString method from Object class
+        ArrayList<Dog> myDogArrayList = new ArrayList<>();
+        Dog aDog = new Dog();
+        System.out.println(aDog.getClass().getName());
+        myDogArrayList.add(aDog);
+        Dog d = myDogArrayList.get(0);    
+        System.out.println(d.getClass().getName());
+        ArrayList<Object> myDogArrayListB = new ArrayList<>();
+        Dog aDogB = new Dog();
+        myDogArrayListB.add(aDogB);
+        System.out.println(aDogB.getClass().getName());
+        // Dog dB = myDogArrayListB.get(0); 
+        // Won't compile. The compiler doesn't know that the object is a Dog
+        // System.out.println(dB.getClass().getName());
     }
 
     public class MakeCanine {
