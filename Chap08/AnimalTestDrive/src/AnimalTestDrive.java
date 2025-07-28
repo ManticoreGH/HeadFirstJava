@@ -1,3 +1,5 @@
+
+
 public class AnimalTestDrive {
     public static void main(String[] args) throws Exception {
         Wolf w = new Wolf();
@@ -31,6 +33,19 @@ public class AnimalTestDrive {
         Cat cat = new Cat();
         list.add(dog);
         list.add(cat);
+        // inerited methods from Object class demonstration
+        Dog a = new Dog();
+        Cat c = new Cat();
+
+        if (a.equals(c)) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+
+        System.out.println(c.getClass().getName());
+        System.out.println(c.hashCode()); // Think of it like an ID for the object for now
+        System.out.println(c.toString()); // Default toString method from Object class        
     }
 
     public class MakeCanine {
