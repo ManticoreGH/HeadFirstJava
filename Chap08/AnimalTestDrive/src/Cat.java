@@ -1,7 +1,17 @@
-public class Cat extends Feline {
+public class Cat extends Feline implements Pet {
     @Override
     public void makeNoise() {
         System.out.println("Cat meows");
+    }
+
+    @Override
+    public void beFriendly() {
+        System.out.println("Cat rubs against you");
+    }
+
+    @Override
+    public void play() {
+        System.out.println("Cat plays with yarn");
     }
 
     @Override
