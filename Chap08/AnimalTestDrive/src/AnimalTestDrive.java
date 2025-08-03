@@ -61,13 +61,13 @@ public class AnimalTestDrive {
         // System.out.println(dB.getClass().getName());
     }
 
-    public class MakeCanine {
-        public void go() {
-            Canine c;
-            c = new Dog(); // This is valid since Dog is a Canine
-            // c = new Canine(); // This line would cause a compile-time error because Canine is abstract
-            c.roam();
-        }
-    }
+    // public class MakeCanine {
+    //     public void go() {
+    //         Canine c;
+    //         c = new Dog(); // This is valid since Dog is a Canine
+    //         // c = new Canine(); // This line would cause a compile-time error because Canine is abstract
+    //         c.roam();
+    //     }
+    // }
     
 }
