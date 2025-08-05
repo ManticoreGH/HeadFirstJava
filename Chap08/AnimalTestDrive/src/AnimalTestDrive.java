@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class AnimalTestDrive {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         Wolf w = new Wolf();
         Dog myDog = new Dog();
         w.makeNoise();
