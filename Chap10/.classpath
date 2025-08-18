@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="AutoBoxing/src"/>
+	<classpathentry kind="src" path="Boxing/src"/>
+	<classpathentry kind="src" path="ConstantInitTestDrive/src"/>
+	<classpathentry kind="src" path="Duck/src"/>
+	<classpathentry kind="src" path="Foo/src"/>
+	<classpathentry kind="src" path="Foof/src"/>
+	<classpathentry kind="src" path="FormatingString/src"/>
+	<classpathentry kind="src" path="Maths/src"/>
+	<classpathentry kind="src" path="Number2String/src"/>
+	<classpathentry kind="src" path="Parse/src"/>
+	<classpathentry kind="src" path="PlayerTestDrive/src"/>
+	<classpathentry kind="src" path="TestBox/src"/>
+	<classpathentry kind="output" path="AutoBoxing/out/production/AutoBoxing"/>
+</classpath>
