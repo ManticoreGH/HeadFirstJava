@@ -1,3 +1,2 @@
 INDEX VERSION 1.134+/home/ssoufflet/Documents/GitHub/HeadFirstJava/.metadata/.plugins/org.eclipse.jdt.core
-846643937.index
 1865797976.index

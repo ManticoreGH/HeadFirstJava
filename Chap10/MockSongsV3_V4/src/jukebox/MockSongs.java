@@ -14,5 +14,4 @@ public class MockSongs {
 		songs.add(new SongV3("50 ways", "simon", 102));
 		return songs;
 	}
-
 }
