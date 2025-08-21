@@ -15,17 +15,17 @@ public class App {
         }
         System.out.println(output.trim());
         //Output: [1, 2, 3, 4, 5] [1, 2, 3, 4, 5] [1, 2, 3, 4, 5] [1, 2, 3, 4, 5] [1, 2, 3, 4, 5]
-        /* output = "";
-        for(int i = 0; i <= nums.size(); i++) {
-            output += nums.get(i) + " ";
-        } */
-        System.out.println(output.trim());
-        //Output: Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
         output = "";
-        for (int i = 0; i <= nums.size(); i++) {
+        /* for(int i = 0; i <= nums.length; i++) {
             output += nums.get(i) + " ";
         }
         System.out.println(output.trim());
-
+        // Exception thrown
+        output = "";
+        /* for (int i = 0; i <= nums.size(); i++) {
+            output += nums.get(i) + " ";
+        }
+        System.out.println(output.trim()); */
+        //Output: Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
     }
 }
