@@ -16,6 +16,8 @@ public class App {
         List<String> result = strings.stream()
             .limit(4)
             .collect(Collectors.toList());
+        System.out.println("Strings = " + strings);
         System.out.println("Result = " + result);
+        
     }
 }
