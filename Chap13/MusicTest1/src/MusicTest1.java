@@ -14,7 +14,7 @@ public class MusicTest1 {
             System.out.println("Bummer");
             System.out.println(e.getMessage());
             e.printStackTrace();
-        }
+        }                   
         System.out.println("Successfully got a sequencer.");
     }
 }
