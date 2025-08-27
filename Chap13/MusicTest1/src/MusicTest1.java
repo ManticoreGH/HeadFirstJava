@@ -9,6 +9,7 @@ public class MusicTest1 {
     public void play(){
         try {
             Sequencer sequencer = MidiSystem.getSequencer();
+            sequencer.open();
             
         } catch (MidiUnavailableException e) {
             System.out.println("Bummer");

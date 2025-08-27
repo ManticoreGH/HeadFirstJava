@@ -4,8 +4,6 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
-
         {
             "type": "java",
             "name": "Current File",
@@ -14,11 +12,11 @@
         },
         {
             "type": "java",
-            "name": "MusicTest1",
+            "name": "ExTestDrive",
             "request": "launch",
-            "mainClass": "MusicTest1",
-            "projectName": "MusicTest1_77e2257a",
-            "args": ""
+            "mainClass": "ExTestDrive",
+            "projectName": "Tester_7d1a7b7f",
+            "args": "yes"
         }
     ]
 }
