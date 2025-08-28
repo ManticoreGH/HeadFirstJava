@@ -1,5 +1,7 @@
-import javax.sound.midi.*; // Import the midi package
-import static javax.sound.midi.ShortMessage.*; // Static import for accessing constant in ShortMessage class
+import javax.sound.midi.*;
+
+import static javax.sound.midi.ShortMessage.NOTE_OFF;
+import static javax.sound.midi.ShortMessage.NOTE_ON;
 
 public class MiniMusicApp {
     public static void main(String[] args) throws Exception {
