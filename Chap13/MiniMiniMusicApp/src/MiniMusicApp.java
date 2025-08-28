@@ -34,6 +34,5 @@ public class MiniMusicApp {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
     }
 }
