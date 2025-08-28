@@ -8,12 +8,17 @@ public class MiniMusicCmdLine {
         } else {
             int instrument = Integer.parseInt(args[0]); // Conversion du premier argument en instrument MIDI
             int note = Integer.parseInt(args[1]); // Conversion du second argument en note MIDI
-            mini.play(instrument, note); // Appel de la méthode pour jouer la note
+            try {
+                mini.play(instrument, note); // Appel de la méthode pour jouer la note
+            } catch (Exception e) {
+                System.out.println("Error playing MIDI: " + e.getMessage());
+                e.printStackTrace(); // Affiche la trace de l'exception en cas d'erreur
+            }
         }
     }
 
-    public void play(int instrument, int note) {
-        try {
+    public void play(int instrument, int note) throws Exception {
+       
             Sequencer player = MidiSystem.getSequencer(); // Obtention du séquenceur MIDI
             player.open(); // Ouverture du séquenceur
             Sequence seq = new Sequence(Sequence.PPQ, 4); // Création d'une séquence MIDI
@@ -39,8 +44,6 @@ public class MiniMusicCmdLine {
 
             player.setSequence(seq); // Charge la séquence dans le séquenceur
             player.start(); // Démarre la lecture de la séquence
-        } catch (Exception ex) {
-            ex.printStackTrace(); // Affiche la trace de l'exception en cas d'erreur
-        }
+        
     }
 }
