@@ -1,13 +1,14 @@
 import java.awt.*;
-import java.awt.image.ImageObserver;
 import javax.swing.*;
 
-public class CatPanel extends JPanel implements ImageObserver {
+public class CatPanel extends JPanel {
     @Override
     public void paintComponent(Graphics g) {
         Image image = new ImageIcon("catzilla.png").getImage();
         g.drawImage(image, 3, 4, this);
     }
+    
+    @Override
     public boolean imageUpdate(Image img, int infoflags, int x, int y, int width, int height) {
         return false;
     }
