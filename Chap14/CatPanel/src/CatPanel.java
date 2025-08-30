@@ -12,6 +12,7 @@ public class CatPanel extends JPanel {
     public boolean imageUpdate(Image img, int infoflags, int x, int y, int width, int height) {
         return false;
     }
+
     public static void main(String[] args) throws Exception {
         JFrame frame = new JFrame();
         frame.add(new CatPanel());
