@@ -1,6 +1,4 @@
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Random;
 import javax.swing.*;
 
@@ -18,10 +16,10 @@ public class TwoButtons {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JButton labelButton = new JButton("Change Label");
-        labelButton.addActionListener(new LabelListener());
-        
+        labelButton.addActionListener(event -> label.setText("Ouch!"));
+
         JButton colorButton = new JButton("Change Color");
-        colorButton.addActionListener(new ColorListener());
+        colorButton.addActionListener(event -> frame.repaint());
 
         label = new JLabel("I am a label");
         MyDrawPanel drawPanel = new MyDrawPanel();
@@ -32,20 +30,6 @@ public class TwoButtons {
 
         frame.setSize(500, 400);
         frame.setVisible(true);
-    }
-
-    private class LabelListener implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            label.setText("Ouch!");
-        }
-    }
-
-    private class ColorListener implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            frame.repaint();
-        }
     }
     
     private class MyDrawPanel extends JPanel {
