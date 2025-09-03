@@ -1,3 +1,5 @@
+package foof;
+
 public class Foof {
     final int size = 3;
     final int whuffie ;

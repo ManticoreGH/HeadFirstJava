@@ -1,3 +1,5 @@
+package duck;
+
 public class Duck {
     private int size;
     public static void main(String[] args) {

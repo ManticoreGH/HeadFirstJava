@@ -1,5 +1,4 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+package Chap10.ConstantInitTestDrive;
 public class Main {
     public static void main(String[] args) {
         ConstantInit1 c1 = new ConstantInit1();

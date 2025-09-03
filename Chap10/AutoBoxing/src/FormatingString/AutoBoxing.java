@@ -1,3 +1,5 @@
+package FormatingString;
+
 import java.util.ArrayList;
 
 public class AutoBoxing {

@@ -1,3 +1,4 @@
+package foo;
 public class Foo {
     static int x;
     public void go(){

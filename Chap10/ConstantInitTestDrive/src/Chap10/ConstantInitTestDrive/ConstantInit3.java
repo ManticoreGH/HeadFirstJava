@@ -1,3 +1,4 @@
+package Chap10.ConstantInitTestDrive;
 public class ConstantInit3 {
     public static final double VAL;
     // This static block initializes the constant VAL

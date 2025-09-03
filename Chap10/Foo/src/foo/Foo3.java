@@ -1,3 +1,4 @@
+package foo;
 public class Foo3 {
     // final int x; // 'x' must be initialized either at declaration or in the constructor
     public void go(){

@@ -1,3 +1,4 @@
+package foo;
 public class Foo6 {
     int x = 12; // 'x' is initialized at declaration
     public static void go(final int x) {
