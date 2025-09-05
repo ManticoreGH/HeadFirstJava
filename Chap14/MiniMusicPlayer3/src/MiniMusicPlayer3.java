@@ -45,7 +45,6 @@ public class MiniMusicPlayer3 {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-
     }
 
     private MidiEvent makeEvent(int cmd, int chnl, int one, int two, int tick) {
