@@ -6,7 +6,7 @@ public class TwoButtons {
     private JFrame frame;
     private JLabel label;
     
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args)  {
         TwoButtons gui = new TwoButtons();
         gui.go();
     }
@@ -32,7 +32,7 @@ public class TwoButtons {
         frame.setVisible(true);
     }
     
-    private class MyDrawPanel extends JPanel {
+    private static class MyDrawPanel extends JPanel {
         @Override
         protected void paintComponent(Graphics g) {
             g.fillRect(0, 0, this.getWidth(), this.getHeight());
