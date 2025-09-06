@@ -10,6 +10,7 @@ public class Panel2 {
     private void go() {
         JFrame frame = new JFrame();
         JPanel panel = new JPanel();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         panel.setBackground(Color.darkGray);
         
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
