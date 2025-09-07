@@ -10,9 +10,12 @@ public class Panel2 {
     private void go() {
         JFrame frame = new JFrame();
         JPanel panel = new JPanel();
+        
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         panel.setBackground(Color.darkGray);
-        
+        // Change the layout manager to be a new instance of BoxLayout
+        // The BoxLayout needs to the component it's laying out (ie., the panel)
+        // and which axis to use (we use Y_AXIS for a vertical layout)
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         
         JButton button = new JButton("shock me");
