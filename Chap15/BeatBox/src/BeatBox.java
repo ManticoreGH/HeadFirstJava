@@ -30,6 +30,10 @@ public class BeatBox {
             70, 72, 64, 56, 58, 47, 67, 63
     };
 
+    /** 
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         new BeatBox().buildGUI();
     }
@@ -57,9 +61,9 @@ public class BeatBox {
         buttonBox.add(stop);
 
         JButton upTempo = new JButton("Tempo Up");
-        // Lambda expressions are perfect for these buttons are pressed, all we want to
-        // do is call a specific method.
-        // The default tempo is 1.0f, so we're adjusting +/- 3% per click.
+        /* Lambda expressions are perfect for these buttons are pressed, all we want to
+        do is call a specific method.
+        The default tempo is 1.0f, so we're adjusting +/- 3% per click. */
         upTempo.addActionListener(e -> changeTempo(1.03f));
         buttonBox.add(upTempo);
 
@@ -70,7 +74,7 @@ public class BeatBox {
         Box nameBox = new Box(BoxLayout.Y_AXIS);
         for (String instrumentName : instrumentNames) {
             JLabel instrumentLabel = new JLabel(instrumentName);
-            // This border on each instrument name helps them line up with the checkboxes
+            /// This border on each instrument name helps them line up with the checkboxes
             instrumentLabel.setBorder(BorderFactory.createEmptyBorder(4, 1, 4, 1));
             nameBox.add(instrumentLabel);
         }
@@ -78,8 +82,10 @@ public class BeatBox {
         background.add(BorderLayout.WEST, nameBox);
 
         frame.getContentPane().add(background);
-        // Another layout manager, this one lets you put components in a grid with rows
-        // and columns.
+        /** 
+         * Another layout manager, this one lets you put components in a grid with rows
+         * and columns.
+         */
         GridLayout grid = new GridLayout(16, 16);
         grid.setVgap(1);
         grid.setHgap(2);
