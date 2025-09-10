@@ -29,12 +29,8 @@ public class BeatBox {
             35, 42, 46, 38, 49, 39, 50, 60,
             70, 72, 64, 56, 58, 47, 67, 63
     };
-
-    /** 
-     * @param args
-     * @throws Exception
-     */
-    public static void main(String[] args) throws Exception {
+    
+    public static void main(String[] args) {
         new BeatBox().buildGUI();
     }
 
@@ -82,7 +78,7 @@ public class BeatBox {
         background.add(BorderLayout.WEST, nameBox);
 
         frame.getContentPane().add(background);
-        /** 
+        /* 
          * Another layout manager, this one lets you put components in a grid with rows
          * and columns.
          */
@@ -108,7 +104,7 @@ public class BeatBox {
     }
 
     private void setUpMidi() {
-        /**
+        /*
          * The usual Midi setup stuff for getting a Sequencer, the Sequence,
          * and the Track. Again, nothing special.
          */
@@ -124,7 +120,7 @@ public class BeatBox {
     }
 
     private void buildTrackAndStart() {
-        /**
+        /*
          * We'll make a 16-element array to hold the values for one instrument,
          * across all 16 beats. If the instrument is supposed to play on that beat, the
          * value at that element, will be the key. If that instrument is NOT supposed to
@@ -138,7 +134,7 @@ public class BeatBox {
         track = sequence.createTrack();
         // Do this for each of the BEATS for this row
         for (int i = 0; i < 16; i++) {
-            /**
+            /*
              * Is the checkbox at this beat selected?
              * If yes, put the key value in this slot in the array (The slot that represents
              * this beat).
@@ -159,10 +155,10 @@ public class BeatBox {
                                    // track.
             track.add(makeEvent(CONTROL_CHANGE, 1, 127, 0, 16));
         }
-        /**
+        /*
          * We always want to make sure that there IS an event at beat 16 (it goes 0 to
          * 15).
-         * Otherwise the BeatBox might not go the full 16 beats before it starts over.
+         * Otherwise, the BeatBox might not go the full 16 beats before it starts over.
          */
         track.add(makeEvent(PROGRAM_CHANGE, 9, 1, 0, 15));
         try {
@@ -178,7 +174,7 @@ public class BeatBox {
         }
     }
 
-    /**
+    /*
      * The Tempo Factor scales the sequencer's tempo by the factor provided, slowing
      * the beat down or speeding it up.
      * 
@@ -189,9 +185,9 @@ public class BeatBox {
         sequencer.setTempoFactor(tempoFactor * tempoMultiplier);
     }
 
-    /**
+    /*
      * This makes events for one instrument at a time, for all 16 beats. 
-     * So it might get an int[] for the bass drum, and each insdex in the array 
+     * So it might get an int[] for the bass drum, and each index in the array 
      * will hold either the key of that instrument or a zero. If it's a zero, 
      * the instrument isn't supposed to play at that beat.
      * Otherwise, make an event and add it to the track.
@@ -211,17 +207,17 @@ public class BeatBox {
      * A utility method to make it easier to add events to the track.
      * 
      * @param cmd  the command for the event
-     * @param chnl the channel
+     * @param chanel the channel
      * @param one  the first data value
      * @param two  the second data value
      * @param tick the beat (position) on which to insert the event
      * @return a MidiEvent object
      */
-    private MidiEvent makeEvent(int cmd, int chnl, int one, int two, int tick) {
+    private MidiEvent makeEvent(int cmd, int chanel, int one, int two, int tick) {
         MidiEvent event = null;
         try {
             ShortMessage msg = new ShortMessage();
-            msg.setMessage(cmd, chnl, one, two);
+            msg.setMessage(cmd, chanel, one, two);
             event = new MidiEvent(msg, tick);
         } catch (Exception e) {
             e.printStackTrace();
