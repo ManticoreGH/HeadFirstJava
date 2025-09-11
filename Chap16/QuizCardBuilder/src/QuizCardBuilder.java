@@ -21,9 +21,9 @@ public class QuizCardBuilder {
         JPanel mainPanel = new JPanel();
         Font bigFont = new Font("sanserif", Font.BOLD, 24);
         question = createTextArea(bigFont);
-        JScrollPane qScroller = new JScrollPane(question);
+        JScrollPane qScroller = createScroller(question);
         answer = createTextArea(bigFont);
-        JScrollPane aScroller = new JScrollPane(answer);
+        JScrollPane aScroller = createScroller(answer);
 
         mainPanel.add(new JLabel("Question:"));
         mainPanel.add(qScroller);
