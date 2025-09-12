@@ -100,7 +100,7 @@ public class QuizCardBuilder {
         answer.setText("");
         question.requestFocus();
     }
-    private void saveFile(File file) {
+    /* private void saveFile(File file) {
         BufferedWriter writer = null;
         try {
             writer = new BufferedWriter(new FileWriter(file));
@@ -116,6 +116,18 @@ public class QuizCardBuilder {
             } catch (Exception e) {
                 System.out.println("couldn't close the writer: " + e.getMessage());
             }
+        }
+    } */
+   
+    // Improved saveFile method with try-with-resources for better resource management
+    private void saveFile(File file) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+            for (QuizCard card : cardList) {
+                writer.write(card.getQuestion() + "/");
+                writer.write(card.getAnswer() + "\n");
+            }
+        } catch (IOException e) {
+            System.out.println("couldn't write the cardList out: " + e.getMessage());
         }
     }
 }
